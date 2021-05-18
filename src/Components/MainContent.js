@@ -1,10 +1,15 @@
 import React from 'react'
-import MyInfo from '../Components/MyInfo'
+import ToDoItem from '../Components/ToDoItem'
+
 
 function MainContent() {
   return (
-    <MyInfo />
-  )
+    <div className="checkboxes">
+      <ToDoItem />
+      <ToDoItem />
+      <ToDoItem />
+    </div>
+  );
 }
 
-export default MainContent
+export default MainContent;

@@ -1,16 +1,14 @@
-import React from 'react'
+import React from "react";
 
-function ToDoItem() {
+function ToDoItem(props) {
+  const { id, text, completed } = props;
   return (
-    <div className="flexContainer">
-      <input type="checkbox" id="check" name="check" />
-      <label for="check">buy apples</label>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus sunt,
-        sequi laborum.
-      </p>
+    <div className="flexContainer" key={id}>
+      <input type="checkbox" name="check" checked={completed} />
+      <label for="check"></label>
+      <p>{text}</p>
     </div>
   );
 }
 
-export default ToDoItem
+export default ToDoItem;
